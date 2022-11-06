@@ -256,23 +256,23 @@ body {
   font-family: "Bellota";
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/bellota-v16-latin_cyrillic-300.woff2");
+  src: url("assets/fonts/bellota-v16-latin_cyrillic-300.woff2");
 }
 @font-face {
   font-family: "Bellota";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/bellota-v16-latin_cyrillic-regular.woff2");
+  src: url("assets/fonts/bellota-v16-latin_cyrillic-regular.woff2");
 }
 @font-face {
   font-family: "Bellota";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/bellota-v16-latin_cyrillic-700.woff2");
+  src: url("assets/fonts/bellota-v16-latin_cyrillic-700.woff2");
 }
 @font-face {
   font-family: "FoglihtenNo06";
-  src: url("/assets/fonts/FoglihtenNo06.woff2");
+  src: url("assets/fonts/FoglihtenNo06.woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -1190,7 +1190,7 @@ body {
   }
 }
 .preview__right {
-  background-image: url("/assets/images/woman.jpg");
+  background-image: url("assets/images/woman.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 24px;
@@ -1370,7 +1370,7 @@ body {
   }
 }
 .rec-card-big__left {
-  background-image: url("/assets/images/frec_flower.jpg");
+  background-image: url("assets/images/frec_flower.jpg");
   background-size: cover;
   background-position: center;
   width: calc(100% + 1px);
@@ -1599,7 +1599,7 @@ body {
   }
 }
 .easy__img {
-  background-image: url("/assets/images/easy_sir.jpg");
+  background-image: url("assets/images/easy_sir.jpg");
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -1612,7 +1612,7 @@ body {
   }
 }
 .easy__img--sec {
-  background-image: url("/assets/images/easy_wom.jpg");
+  background-image: url("assets/images/easy_wom.jpg");
 }
 .easy__hover {
   font-family: "Bellota", sans-serif;
