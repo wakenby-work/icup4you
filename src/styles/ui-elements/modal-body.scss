@@ -1,0 +1,130 @@
+.modal-body {
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+
+  width: 970px;
+  height: 690px;
+
+  border-radius: $border;
+  background: $white;
+
+
+  @media (width < $media-pc-1280) {
+    padding: 40px 32px;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (width < $media-mobile) {
+    padding: 24px 16px 40px 16px;
+  }
+
+  &__header {
+    align-self: end;
+  }
+
+  &__body {
+    @include grid;
+    padding-top: 30px;
+    height: 100%;
+
+    @media (width < $media-mobile) {
+      padding-top: 30px;
+    }
+  }
+
+  &__img {
+    grid-column: span 4;
+    width: 100%;
+    object-fit: cover;
+    min-width: 0;
+
+    @media (width < $media-pc-1280) {
+      grid-column: span 3;
+    }
+
+    @media (width < $media-mobile) {
+      grid-column: span 2;
+    }
+  }
+
+  &__choose {
+    grid-column: 5 / span 7;
+    margin-bottom: 0;
+
+    @media (width < $media-pc-1280) {
+      padding: 0;
+      grid-column: 6 / span 8;
+    }
+
+    @media (width < $media-mobile) {
+      padding: 0;
+      grid-column: 3 / span 4;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    @media (width < $media-pc-1280) {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__input {
+    margin-bottom: 28px;
+
+    @media (width < $media-pc-1280) {
+      display: none;
+    }
+
+    &--media {
+      grid-column: span 12;
+      width: 100%;
+      display: none;
+      margin-bottom: 0;
+
+      @media (width < $media-pc-1280) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media (width < $media-mobile) {
+        grid-column: span 6;
+      }
+    }
+  }
+
+  &__checkbox {
+    margin-bottom: 40px;
+  }
+
+  &__button {
+
+    @media (width < $media-pc-1280) {
+      display: block;
+      width: 100%;
+      margin-top: auto;
+    }
+  }
+
+  &__title {
+    @media (width < $media-mobile) {
+      @include h6;
+    }
+  }
+
+  &__choose-shell {
+    @media (width < $media-mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}

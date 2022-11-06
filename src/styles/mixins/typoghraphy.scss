@@ -1,0 +1,96 @@
+// font-family
+
+@mixin font-fog {
+  font-family: 'FoglihtenNo06', sans-serif;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+@mixin font-bel {
+  font-family: 'Bellota', sans-serif;
+  line-height: 140%;
+}
+
+//---
+
+// heading
+
+@mixin h1 {
+  @include font-fog;
+  font-size: 72px;
+}
+
+@mixin h2 {
+  @include font-fog;
+  font-size: 60px;
+}
+
+@mixin h3 {
+  @include font-fog;
+  font-size: 42px;
+}
+
+@mixin h4 {
+  @include font-fog;
+  font-size: 32px;
+}
+
+@mixin h5 {
+  @include font-fog;
+  font-size: 24px;
+}
+
+@mixin h6 {
+  @include font-fog;
+  font-size: 18px;
+}
+
+// ---
+
+// text
+
+@mixin body-big-big {
+  @include font-bel;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+@mixin body-big-bold {
+  @include font-bel;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+@mixin body-big {
+  @include font-bel;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+@mixin body {
+  @include font-bel;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@mixin body-bold {
+  @include font-bel;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+@mixin body-small-bold {
+  @include font-bel;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+@mixin body-small {
+  @include font-bel;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+// ---
+
+

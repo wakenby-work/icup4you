@@ -1,0 +1,107 @@
+.choose {
+  width: 100%;
+  padding: 24px 0 24px 38px;
+
+  @media (width < $media-pc-1280) {
+    padding: 21px 0 24px 30px;
+  }
+
+  @media (width < $media-mobile) {
+    padding: 18px 16px 16px 16px;
+  }
+
+  &__title {
+    @include h4;
+    margin-bottom: 32px;
+
+    @media (width < $media-pc-1440) {
+      margin-bottom: 16px;
+    }
+
+    @media (width < $media-pc-1280) {
+      margin-bottom: 24px;
+    }
+
+    @media (width < $media-mobile) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__choose {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 8px;
+
+    @media (width < $media-mobile) {
+      justify-content: space-between;
+    }
+  }
+
+  &__shell {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__radio {
+    display: none;
+
+    &:checked + .choose__size {
+      background: $blue;
+      color: $white;
+    }
+  }
+
+  &__size {
+    @include body;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 41px;
+    height: 38px;
+    background: $gray-light-2;
+    border-radius: $border;
+    transition: $transition-time background $transition-way, $transition-time color $transition-way;
+    cursor: pointer;
+
+    &:hover {
+      background: $blue-light;
+    }
+  }
+
+  &__instruction {
+    @include body-small;
+    color: $gray-dark;
+    transition: $transition-time border-bottom-color $transition-way;
+    cursor: pointer;
+    width: 212px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-bottom-color: $gray-dark;
+    }
+  }
+
+  &__price {
+    @include body-big-bold;
+    color: $blue;
+    margin-bottom: 32px;
+
+    @media (width < $media-pc-1280) {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__button {
+    @media (width < $media-pc-1280) {
+      display: none;
+    }
+
+    @media (width < $media-mobile) {
+      display: block;
+    }
+  }
+}
+
+

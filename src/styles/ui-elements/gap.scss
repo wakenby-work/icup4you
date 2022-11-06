@@ -1,0 +1,13 @@
+.gap {
+  height: 160px;
+
+  @media (width < $media-pc-1280) {
+    height: 120px;
+  }
+
+  &--header {
+    @media (width < $media-pc-1280) {
+      height: 45px;
+    }
+  }
+}

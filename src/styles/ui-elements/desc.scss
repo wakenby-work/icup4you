@@ -1,0 +1,7 @@
+.desc {
+  @include body;
+
+  @media (width < $media-pc-1280) {
+    @include body-small;
+  }
+}

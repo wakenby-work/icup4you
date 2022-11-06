@@ -1,0 +1,83 @@
+.modal-aside {
+  padding: 40px 24px;
+  width: 502px;
+  height: 100%;
+  margin-left: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  color: $white;
+  background: $black;
+
+  @media (width < $media-mobile) {
+    width: 100%;
+    padding: 24px 24px 40px 24px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+
+    @media (width < $media-mobile) {
+      margin-bottom: 46px;
+    }
+  }
+
+  &__logo {
+    height: 24px;
+    width: 90px;
+  }
+
+  &__close {
+    width: 46px;
+    height: 46px;
+    transition: $transition-time color $transition-way;
+    cursor: pointer;
+
+    @media (width < $media-mobile) {
+      width: 36px;
+      height: 36px;
+    }
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  &__shell {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @media (width < $media-mobile) {
+      gap: 16px;
+    }
+  }
+
+  &__nav {
+    @include body-big;
+    transition: $transition-time color $transition-way;
+
+    &:hover {
+      color: $blue-light;
+    }
+
+    &:hover {
+      color: $gray-dark;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__desc {
+    @include body-big;
+  }
+}

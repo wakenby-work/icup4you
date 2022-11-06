@@ -1,0 +1,62 @@
+.footer {
+  @mixin flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__lower-body {
+    @include flex;
+    padding: 16px 0 44px 0;
+    color: $gray;
+
+    @media (width < $media-pc-1280) {
+      padding: 16px 0 28px 0;
+    }
+
+    @media (width < $media-mobile) {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      padding-bottom: 24px;
+    }
+  }
+
+  &__shell {
+    @include flex;
+    gap: 16px;
+
+    @media (width >= $media-mobile) {
+      display: contents;
+    }
+  }
+
+  &__desc {
+    @include body-small;
+
+    &--hover {
+      transition: $transition-time color $transition-way;
+
+      &:hover {
+        color: $blue-light;
+      }
+
+      &:active {
+        color: $blue;
+      }
+    }
+  }
+
+  &__verno {
+    color: red;
+    display: inline;
+    transition: $transition-time color $transition-way;
+
+    &:hover {
+      color: $blue-light;
+    }
+
+    &:active {
+      color: $blue;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.feedback-left {
+  padding-top: 24px;
+  align-self: center;
+
+  @media (width < $media-pc-1280) {
+    padding: 60px 0 60px 30px;
+  }
+
+  @media (width < $media-mobile) {
+    padding: 56px 15px;
+  }
+
+  &__title {
+    @include h3;
+    margin-bottom: 8px;
+
+    @media (width < $media-pc-1280) {
+      @include h5;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 40px;
+
+    @media (width < $media-pc-1280) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__input {
+    margin-bottom: 16px;
+
+    @media (width < $media-pc-1280) {
+      margin-bottom: 8px;
+    }
+
+    @media (width < $media-pc-1280) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__checkbox {
+    margin-bottom: 56px;
+
+    @media (width < $media-pc-1280) {
+      margin-bottom: 40px;
+    }
+
+    @media (width < $media-mobile) {
+      margin-bottom: 56px;
+    }
+  }
+}

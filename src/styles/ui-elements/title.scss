@@ -1,0 +1,11 @@
+.title {
+  @include h2;
+
+  @media (width < $media-pc-1280) {
+    @include h4;
+  }
+
+  @media (width < $media-mobile) {
+    @include h5;
+  }
+}

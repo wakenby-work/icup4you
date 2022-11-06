@@ -1,0 +1,28 @@
+.how {
+
+  &__title {
+    color: $white;
+    margin-bottom: 56px;
+
+    @media (width < $media-pc-1280) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__body {
+    @include grid;
+
+    .how-card {
+      grid-column: span 4;
+      grid-auto-rows: 1fr;
+
+      @media (width < $media-pc-1280) {
+        grid-column: span 12;
+      }
+
+      @media (width < $media-mobile) {
+        grid-column: span 6;
+      }
+    }
+  }
+}

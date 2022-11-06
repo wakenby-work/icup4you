@@ -1,0 +1,95 @@
+.preview {
+
+  &__body {
+    @include grid;
+    color: $white;
+    position: relative;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 7;
+    padding: 57px 0;
+    z-index: 2;
+
+    @media (width < $media-pc-1280) {
+      grid-column: span 5;
+      padding: 97px 0;
+    }
+
+    @media (width < $media-mobile) {
+      order: 2;
+      grid-column: span 6;
+      padding: 0;
+    }
+  }
+
+  &__title {
+    @include h1;
+    margin-bottom: 16px;
+
+    @media (width < $media-pc-1280) {
+      @include h3;
+      margin-bottom: 8px;
+    }
+
+    @media (width < $media-pc-1280) {
+      @include h5;
+    }
+  }
+
+  &__span {
+    color: $blue;
+  }
+
+  &__desc {
+    margin-bottom: 56px;
+
+    @media (width < $media-pc-1280) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__button-first {
+
+    @media (width < $media-pc-1280) {
+      display: none;
+    }
+  }
+
+  &__button-second {
+    display: none;
+
+    @media (width < $media-pc-1280) {
+      display: block;
+      margin-top: 40px;
+    }
+
+    @media (width < $media-mobile) {
+      margin-top: 56px;
+    }
+  }
+
+  &__right {
+    background-image: url("/assets/images/woman.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: $border;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 73%;
+    height: 100%;
+    z-index: 1;
+
+    @media (width < $media-mobile) {
+      order: 1;
+      grid-column: span 6;
+      width: 100%;
+      height: 224px;
+      position: relative;
+      margin-bottom: 16px;
+    }
+  }
+}

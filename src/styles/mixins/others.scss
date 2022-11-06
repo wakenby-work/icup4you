@@ -1,0 +1,14 @@
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(12 , 1fr);
+  gap: 40px;
+
+  @media (width < $media-pc-1440) {
+    gap: 30px;
+  }
+
+  @media (width < $media-mobile) {
+    grid-template-columns: repeat(6 , 1fr);
+    gap: 15px;
+  }
+}

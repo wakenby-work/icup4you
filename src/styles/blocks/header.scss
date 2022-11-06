@@ -1,0 +1,64 @@
+.header {
+  @mixin flex{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__container {
+    @include flex;
+    padding-top: 24px;
+    color: $white;
+
+    @media (width < $media-pc-1280) {
+      align-items: center;
+      padding-top: 30px;
+    }
+  }
+
+  &__shell {
+    @include flex;
+    gap: 40px;
+    align-items: center;
+
+    @media (width < $media-pc-1440) {
+      gap: 24px;
+    }
+
+    @media (width < $media-pc-1280) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: $transition-time color $transition-way;
+
+    @media (width < $media-pc-1280) {
+      display: block;
+    }
+
+    &:hover {
+      color: $blue-light;
+    }
+
+    &:active {
+      color: $blue;
+    }
+  }
+
+  a {
+    cursor: pointer;
+    transition: $transition-time color $transition-way;
+
+    &:hover {
+      color: $blue-light;
+    }
+
+    &:active {
+      color: $gray-dark;
+    }
+  }
+}

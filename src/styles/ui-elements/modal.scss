@@ -1,0 +1,56 @@
+.modal {
+  opacity: 0;
+  position: fixed;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  transition: 200ms opacity linear;
+  pointer-events: none;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  .modal-body {
+    transform: scale(0.2);
+    transition: 200ms transform linear;
+  }
+
+  .modal-aside {
+    transform: translateX(100%);
+    transition: 200ms transform linear;
+  }
+
+  &--open {
+    opacity: 1;
+    pointer-events: auto;
+
+    .modal-body {
+      transform: scale(1);
+    }
+
+    .modal-aside {
+      transform: translateX(0);
+    }
+  }
+
+  &__close {
+    color: $black;
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+    transition: $transition-time color $transition-way;
+
+    @media (width < $media-mobile) {
+      top: 24px;
+      right: 24px;
+    }
+
+    &:hover {
+      color: red;
+    }
+  }
+}

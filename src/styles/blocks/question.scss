@@ -1,0 +1,40 @@
+.question {
+
+  &__container {
+    @include grid;
+  }
+
+  &__title {
+    color: $white;
+    grid-column: span 6;
+    margin-bottom: 40px;
+
+    @media (width < $media-pc-1440) {
+      grid-column: span 7;
+    }
+
+    @media (width < $media-pc-1280) {
+      grid-column: span 12;
+    }
+
+    @media (width < $media-mobile) {
+      grid-column: span 6;
+    }
+  }
+
+  &__body {
+    grid-column: span 6;
+
+    @media (width < $media-pc-1440) {
+      grid-column: span 5;
+    }
+
+    @media (width < $media-pc-1280) {
+      grid-column: span 12;
+    }
+
+    @media (width < $media-mobile) {
+      grid-column: span 6;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.modal-small {
+  position: relative;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 650px;
+  height: 462px;
+
+  border-radius: $border;
+  background: $white;
+
+
+  @media (width < $media-pc-1280) {
+    padding: 0 30px 30px 30px;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (width < $media-pc-1280) {
+    padding: 0 15px 15px 15px;
+  }
+
+  &__body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (width < $media-pc-1280) {
+      margin: auto 0 0 0;
+    }
+  }
+
+  &__title {
+    @include h4;
+    margin-bottom: 8px;
+  }
+
+  &__desc {
+    text-align: center;
+  }
+
+  &__button {
+    margin-top: 56px;
+
+    @media (width < $media-pc-1280) {
+      display: none;
+    }
+
+    &--media {
+      display: none;
+
+      @media (width < $media-pc-1280) {
+        display: block;
+        margin-top: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+// Библиотеки
+@import 'node_modules/reset-css/reset';
+@import 'node_modules/swiper/swiper';
+// ---
+
+// base
+@import "../styles/base";
+// ---
+
+// шрифты
+@import "../styles/fonts/bellota";
+@import "../styles/fonts/fog";
+// ---
+
+// mixins
+@import "../styles/mixins/typoghraphy";
+@import "../styles/mixins/others";
+// ---
+
+// variables
+@import "../styles/variables/vars";
+// ---
+
+// ui-elements
+@import "../styles/ui-elements/container";
+@import "../styles/ui-elements/gap";
+@import "../styles/ui-elements/button";
+@import "../styles/ui-elements/title";
+@import "../styles/ui-elements/desc";
+@import "../styles/ui-elements/logo";
+@import "../styles/ui-elements/swiper";
+@import "../styles/ui-elements/input";
+@import "../styles/ui-elements/checkbox";
+@import "../styles/ui-elements/overlay";
+@import "../styles/ui-elements/modal";
+@import "../styles/ui-elements/modal-aside";
+@import "../styles/ui-elements/media";
+@import "../styles/ui-elements/choose";
+@import "../styles/ui-elements/count";
+@import "../styles/ui-elements/modal-body";
+@import "../styles/ui-elements/modal-small";
+@import "../styles/ui-elements/modal-small-form";
+// ---
+
+// blocks
+@import "../styles/blocks/black";
+@import "../styles/blocks/header";
+@import "../styles/blocks/preview";
+@import "../styles/blocks/rec";
+@import "../styles/blocks/rec-card";
+@import "../styles/blocks/rec-card-big";
+@import "../styles/blocks/how";
+@import "../styles/blocks/how-card";
+@import "../styles/blocks/easy";
+@import "../styles/blocks/review";
+@import "../styles/blocks/question";
+@import "../styles/blocks/question-line";
+@import "../styles/blocks/feedback";
+@import "../styles/blocks/feedback-left";
+@import "../styles/blocks/footer";
+@import "../styles/blocks/footer-upper";
+// ---
+
+

@@ -1,0 +1,135 @@
+.easy {
+
+  &__title {
+    color: $white;
+    margin-bottom: 56px;
+
+    @media (width < $media-pc-1280) {
+      margin-bottom: 40px;
+    }
+
+    &--pc {
+      @media (width < $media-mobile) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+      @media (width < $media-mobile) {
+        display: block;
+      }
+    }
+  }
+
+  &__body {
+    @include grid;
+
+    .easy__card {
+      grid-column: span 4;
+
+      @media (width < $media-pc-1280) {
+        grid-column: span 6;
+      }
+    }
+
+    .easy__img {
+      grid-column: span 4;
+    }
+  }
+
+  &__card {
+    width: 100%;
+    border: 2px solid $white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 0 25px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    aspect-ratio: 1 / 1;
+
+    @media (width < $media-pc-1280) {
+      gap: 8px;
+    }
+
+    &:hover .easy__hover {
+      opacity: 1;
+    }
+  }
+
+  &__card-number {
+    @include h1;
+    color: $blue;
+
+    @media (width < $media-pc-1440) {
+      @include h2;
+    }
+
+    @media (width < $media-pc-1280) {
+      display: none;
+    }
+  }
+
+  &__card-sub-title {
+    @include h4;
+    color: $white;
+
+    @media (width < $media-pc-1440) {
+      @include h5;
+    }
+  }
+
+  &__desc {
+    display: none;
+    color: $white;
+    text-align: center;
+
+    @media (width < $media-pc-1280) {
+      display: block;
+    }
+  }
+
+  &__img {
+    background-image: url("/assets/images/easy_sir.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+
+    @media (width < $media-pc-1280) {
+      display: none;
+    }
+
+    &--sec {
+      background-image: url("/assets/images/easy_wom.jpg");
+    }
+  }
+
+  &__hover {
+    @include body;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    background: $white;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    border-radius: 50%;
+    padding: 0 40px;
+    transition: $transition-time opacity $transition-way;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: -1px;
+
+    @media (width: $media-pc-1440) {
+      padding: 0 26px;
+    }
+  }
+}

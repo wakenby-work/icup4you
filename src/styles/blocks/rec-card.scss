@@ -1,0 +1,37 @@
+.rec-card {
+  grid-column: span 4;
+  padding: 109px 24px;
+  border: 1px solid $gray;
+  border-radius: $border;
+  grid-auto-rows: 1fr;
+
+  @media (width < $media-pc-1280) {
+    padding: 100px 24px;
+  }
+
+  @media (width < $media-pc-1280) {
+    grid-column: span 6;
+    padding: 54px 16px;
+  }
+
+  @media (width < $media-mobile) {
+    grid-column: span 6;
+    padding: 16px;
+  }
+
+  &__title {
+    @include h4;
+    margin-bottom: 8px;
+
+    @media (width < $media-pc-1440) {
+      @include h5;
+    }
+  }
+
+  &__desc {
+
+    @media (width < $media-pc-1280) {
+      @include body-small
+    }
+  }
+}

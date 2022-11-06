@@ -1,0 +1,25 @@
+.count {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  &__circle {
+    width: 32px;
+    height: 32px;
+    color: $blue;
+    transition: $transition-time color $transition-way;
+    cursor: pointer;
+
+    &:hover {
+      color: $gray-dark;
+    }
+
+    &:active {
+      color: $blue-light;
+    }
+  }
+
+  &__number {
+    @include body-big-bold;
+  }
+}

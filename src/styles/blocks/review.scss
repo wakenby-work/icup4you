@@ -1,0 +1,83 @@
+.review {
+  .swiper {
+    @media (width < $media-mobile) {
+      margin-left: calc(-1 * var(--pad));
+      width: calc(100% + var(--pad) + var(--pad));
+      padding-left: var(--pad);
+      padding-right: var(--pad);
+    }
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  &__title {
+    color: $white;
+    text-align: center;
+    margin-bottom: 56px;
+
+    @media (width < $media-pc-1280) {
+      text-align: start;
+      margin-bottom: 40px;
+    }
+
+    @media (width < $media-mobile) {
+      text-align: center;
+    }
+  }
+
+  &__card {
+    grid-column: span 4;
+    background: $white;
+    border-radius: $border;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+
+    @media (width < $media-pc-1280) {
+      padding: 12px;
+      grid-column: span 6;
+    }
+
+    @media (width < $media-mobile) {
+      padding: 16px;
+    }
+  }
+
+  &__card-title {
+    @include h5;
+    margin-bottom: 8px;
+  }
+
+  &__card-desc {
+    margin-bottom: 16px;
+
+    @media (width < $media-pc-1440) {
+      margin-bottom: 14px;
+    }
+
+    @media (width < $media-pc-1280) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__stars {
+    width: 106px;
+    height: 18px;
+    margin-top: auto;
+  }
+
+  &__swiper {
+    margin-top: 40px;
+    justify-content: center;
+
+    @media (width < $media-pc-1280) {
+      margin-top: 24px;
+    }
+
+    @media (width < $media-mobile) {
+      margin-top: 40px;
+    }
+  }
+}

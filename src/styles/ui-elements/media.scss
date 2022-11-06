@@ -1,0 +1,41 @@
+.media {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  @media (width < $media-pc-1280) {
+    gap: 8px;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: $blue;
+    transition: $transition-time background $transition-way;
+    cursor: pointer;
+
+    &:hover {
+      background: $blue-light;
+    }
+
+    &:active {
+      background: $blue;
+    }
+  }
+
+  &__line {
+    width: 1px;
+    height: 24px;
+    background: $gray;
+  }
+
+  &__vk {
+    width: 16px;
+    height: 10px;
+  }
+}
+

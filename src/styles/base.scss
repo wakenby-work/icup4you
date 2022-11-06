@@ -1,0 +1,23 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  display: block;
+  color: currentColor;
+  text-decoration: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: 'Bellota', sans-serif;
+  background-color: #FFFFFF;
+  color: #101010;
+}
+

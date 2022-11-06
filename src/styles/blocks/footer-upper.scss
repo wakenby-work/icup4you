@@ -1,0 +1,14 @@
+.footer-upper {
+  border-bottom: 1px solid $gray-light-2;
+  color: $white;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 26px;
+
+    @media (width < $media-pc-1280) {
+      padding-bottom: 16px;
+    }
+  }
+}

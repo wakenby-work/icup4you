@@ -1,0 +1,13 @@
+.container {
+  --pad: 30px;
+
+  max-width: calc(1320px + var(--pad) + var(--pad));
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--pad);
+  padding-right: var(--pad);
+
+  @media (width < $media-mobile) {
+    --pad: 15px;
+  }
+}

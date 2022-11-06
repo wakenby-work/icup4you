@@ -1,0 +1,46 @@
+.how-card {
+  background: $white;
+  border-radius: $border;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (width < $media-pc-1280) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @media (width < $media-mobile) {
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__title {
+    @include body-big-bold;
+    margin-bottom: 8px;
+
+    @media (width < $media-pc-1280) {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__sub-title {
+    @include body-small;
+    margin-bottom: 16px;
+
+    @media (width < $media-pc-1280) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__img {
+    max-width: 307px;
+  }
+}

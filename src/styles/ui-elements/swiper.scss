@@ -1,0 +1,21 @@
+.swiper-nav {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+
+  &__arrow {
+    color: $white;
+    width: 86px;
+    height: 38px;
+    transition: $transition-time color $transition-way;
+    cursor: pointer;
+
+    &:hover {
+      color: $blue-light;
+    }
+
+    &:active {
+      color: $blue;
+    }
+  }
+}

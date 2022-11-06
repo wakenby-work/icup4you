@@ -1,0 +1,33 @@
+.rec-card-big {
+  grid-column: span 8;
+  display: flex;
+  padding: 0;
+
+  @media (width < $media-pc-1280) {
+    grid-column: span 12;
+  }
+
+  @media (width < $media-mobile) {
+    grid-column: span 6;
+    flex-direction: column;
+  }
+
+  &__left {
+    background-image: url("/assets/images/frec_flower.jpg");
+    background-size: cover;
+    background-position: center;
+    width: calc(100% + 1px);
+    height: calc(100% + 2px);
+    min-width: 0;
+
+    border-top-left-radius: $border;
+    border-bottom-left-radius: $border;
+    margin: -1px 0 -1px -1px;
+
+    @media (width < $media-pc-1280) {
+      border-top-right-radius: $border;
+      border-bottom-right-radius: $border;
+      max-height: 360px;
+    }
+  }
+}
